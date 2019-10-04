@@ -6,18 +6,23 @@ public class MobileProgramming extends Employeer {
 
     Scanner input = new Scanner(System.in);
     String lastjob;
-    String released_app;
+    String releasedapp;
 
 
-    public void lastjob(){
+    public void mobilep(){
+        Employeer emp =new Employeer();
+        emp.Input_Specifications();
 
         System.out.println("Enter your Last Job :\n");
         lastjob=input.nextLine();
-    }
-
-    public void released_app(){
 
         System.out.println("Enter Number of Released App :\n");
-        released_app=input.nextLine();
+        releasedapp=input.nextLine();
+
+
+        emp.disply();
+
+        System.out.println("Your Last Job is :" + lastjob);
+        System.out.println("Your Number Of Released App is :" + releasedapp);
     }
 }

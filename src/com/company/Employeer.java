@@ -7,24 +7,30 @@ public class Employeer {
     Scanner input=new Scanner(System.in);
 
     String name;
-    int id;
-    String workexcp;
-    public void name(){
+    Long id;
+    int workexcp;
+
+    public void Input_Specifications() {
 
         System.out.println("Enter your Name :\n");
-        name=input.nextLine();
-    }
-
-    public void number(){
+        name = input.nextLine();
 
         System.out.println("Enter your Id :\n");
-        id=input.nextInt();
+        id = input.nextLong();
+
+        System.out.println("Enter Your Work Experience(Number Of Year) :\n");
+        workexcp = input.nextInt();
+
+
+
+
+
     }
 
-    public void workexperience(){
-        System.out.println("Enter your Work Experience :\n");
-        workexcp=input.nextLine();
+    public void disply(){
+
+        System.out.println("Your Name is :" + name);
+        System.out.println("Your Id is :" + id);
+        System.out.println("Your Work Experience is :" + workexcp);
     }
-
-
 }
